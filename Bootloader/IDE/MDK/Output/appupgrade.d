@@ -1,0 +1,15 @@
+.\output\appupgrade.o: ..\..\App\AppUpgrade\AppUpgrade.c
+.\output\appupgrade.o: ..\..\App\AppUpgrade\AppUpgrade.h
+.\output\appupgrade.o: ..\..\App\Configure\Configure.h
+.\output\appupgrade.o: ..\..\App\Configure\CfgTagInfo.h
+.\output\appupgrade.o: ..\..\App\Configure\CfgFlashPartition.h
+.\output\appupgrade.o: ..\..\Protocol\ZkPtl\ZkPtl.h
+.\output\appupgrade.o: ..\..\Driver\DrvFlash\DrvFlash.h
+.\output\appupgrade.o: ..\..\App\AppConfig\AppConfig.h
+.\output\appupgrade.o: ..\..\Core\Include\MKE16Z4.h
+.\output\appupgrade.o: ..\..\Core\Include\core_cm0plus.h
+.\output\appupgrade.o: E:\WindowApp\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\appupgrade.o: ..\..\Core\Include\cmsis_version.h
+.\output\appupgrade.o: ..\..\Core\Include\cmsis_compiler.h
+.\output\appupgrade.o: ..\..\Core\Include\cmsis_armcc.h
+.\output\appupgrade.o: ..\..\Driver\DrvTimer\DrvTimer.h

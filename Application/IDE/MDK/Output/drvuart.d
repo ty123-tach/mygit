@@ -1,0 +1,11 @@
+.\output\drvuart.o: ..\..\Driver\DrvUart\DrvUart.c
+.\output\drvuart.o: ..\..\Driver\DrvUart\DrvUart.h
+.\output\drvuart.o: ..\..\Driver\DrvGpio\DrvGpio.h
+.\output\drvuart.o: ..\..\Core\System.h
+.\output\drvuart.o: ..\..\Core\Include\MKE16Z4.h
+.\output\drvuart.o: ..\..\Core\Include\core_cm0plus.h
+.\output\drvuart.o: E:\WindowApp\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\drvuart.o: ..\..\Core\Include\cmsis_version.h
+.\output\drvuart.o: ..\..\Core\Include\cmsis_compiler.h
+.\output\drvuart.o: ..\..\Core\Include\cmsis_armcc.h
+.\output\drvuart.o: ..\..\Protocol\ZkPtl\ZkPtlLowlevel.h

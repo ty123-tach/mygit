@@ -1,0 +1,21 @@
+--cpu Cortex-M0+ --scatter "./RTE/Device/MKE16Z32VLD4/MKE16Z32xxx4_flash.scf"
+".\output\main.o"
+".\output\apptag.o"
+".\output\app.o"
+".\output\startup_mke16z4.o"
+".\output\system.o"
+".\output\drvtimer.o"
+".\output\drvuart.o"
+".\output\drvgpio.o"
+".\output\drvflash.o"
+".\output\drvwdt.o"
+".\output\drvadc.o"
+".\output\drvcan.o"
+".\output\zkptl.o"
+".\output\zkptllowlevel.o"
+".\output\powermonitor.o"
+".\output\debugmsg.o"
+--library_type=microlib --diag_suppress 6314 --strict --scatter ".\MKE16_FlashMap.sct"
+--remove --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ZkApp.map" -o .\Output\ZkApp.axf

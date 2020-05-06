@@ -1,0 +1,614 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    boot.o(i.BootHandle) refers to boot.o(i.BootReportProgramError) for BootReportProgramError
+    boot.o(i.BootHandle) refers to zkptl.o(i.ZkPtlMonitor) for ZkPtlMonitor
+    boot.o(i.BootHandle) refers to softtaginfo.o(i.SoftTagInfoHandle) for SoftTagInfoHandle
+    boot.o(i.BootHandle) refers to appconfig.o(i.AppConfigHandle) for AppConfigHandle
+    boot.o(i.BootHandle) refers to appupgrade.o(i.AppUpgradeHandle) for AppUpgradeHandle
+    boot.o(i.BootHandle) refers to boot.o(.data) for gProgramError
+    boot.o(i.BootInit) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    boot.o(i.BootInit) refers to boot.o(i.FactoryInitializationCheck) for FactoryInitializationCheck
+    boot.o(i.BootInit) refers to appconfig.o(i.FixConfigModify) for FixConfigModify
+    boot.o(i.BootInit) refers to system.o(i.JumpToApplication) for JumpToApplication
+    boot.o(i.BootInit) refers to boot.o(.data) for gProgramError
+    boot.o(i.BootReportProgramError) refers to drvtimer.o(i.DrvGetTimerMsTick) for DrvGetTimerMsTick
+    boot.o(i.BootReportProgramError) refers to zkptl.o(i.ZkPtlSetFrameData) for ZkPtlSetFrameData
+    boot.o(i.BootReportProgramError) refers to boot.o(.data) for gProgramError
+    boot.o(i.FactoryInitializationCheck) refers to boot.o(i.ZkChkVrifi) for ZkChkVrifi
+    boot.o(i.HardwareInit) refers to drvtimer.o(i.DrvTimerInit) for DrvTimerInit
+    boot.o(i.HardwareInit) refers to drvuart.o(i.DrvUartInit) for DrvUartInit
+    boot.o(i.SoftwareInit) refers to zkptl.o(i.ZkPtlInit) for ZkPtlInit
+    boot.o(i.SoftwareInit) refers to boot.o(i.BootInit) for BootInit
+    main.o(i.main) refers to boot.o(i.HardwareInit) for HardwareInit
+    main.o(i.main) refers to boot.o(i.SoftwareInit) for SoftwareInit
+    main.o(i.main) refers to boot.o(i.BootHandle) for BootHandle
+    softtaginfo.o(i.SoftTagInfoHandle) refers to zkptl.o(i.ZkPtlCopyFrameData) for ZkPtlCopyFrameData
+    softtaginfo.o(i.SoftTagInfoHandle) refers to zkptl.o(i.ZkPtlSetFrameData) for ZkPtlSetFrameData
+    appconfig.o(i.AppConfigHandle) refers to zkptl.o(i.ZkPtlCopyFrameData) for ZkPtlCopyFrameData
+    appconfig.o(i.AppConfigHandle) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    appconfig.o(i.AppConfigHandle) refers to drvflash.o(i.DrvFlashBlock64Write) for DrvFlashBlock64Write
+    appconfig.o(i.AppConfigHandle) refers to drvflash.o(i.DrvFlashEraseSector) for DrvFlashEraseSector
+    appconfig.o(i.AppConfigHandle) refers to zkptl.o(i.ZkPtlSetFrameData) for ZkPtlSetFrameData
+    appconfig.o(i.AppConfigHandle) refers to appconfig.o(.data) for gFixCfgRestore
+    appconfig.o(i.AppConfigHandle) refers to appconfig.o(.bss) for gFixCfg
+    appconfig.o(i.FixConfigModify) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    appconfig.o(i.FixConfigModify) refers to drvflash.o(i.DrvFlashEraseSector) for DrvFlashEraseSector
+    appconfig.o(i.FixConfigModify) refers to drvflash.o(i.DrvFlashWriteLongWord) for DrvFlashWriteLongWord
+    appconfig.o(i.FixConfigModify) refers to appconfig.o(.bss) for gCfgSector
+    appupgrade.o(i.AppDataErase) refers to drvflash.o(i.DrvFlashEraseSector) for DrvFlashEraseSector
+    appupgrade.o(i.AppUpgradeHandle) refers to zkptl.o(i.ZkPtlCopyFrameData) for ZkPtlCopyFrameData
+    appupgrade.o(i.AppUpgradeHandle) refers to appupgrade.o(i.AppDataErase) for AppDataErase
+    appupgrade.o(i.AppUpgradeHandle) refers to drvflash.o(i.DrvFlashBlock64Write) for DrvFlashBlock64Write
+    appupgrade.o(i.AppUpgradeHandle) refers to appconfig.o(i.FixConfigModify) for FixConfigModify
+    appupgrade.o(i.AppUpgradeHandle) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    appupgrade.o(i.AppUpgradeHandle) refers to zkptl.o(i.ZkPtlSetFrameData) for ZkPtlSetFrameData
+    appupgrade.o(i.AppUpgradeHandle) refers to drvtimer.o(i.DrvTickDelayMs) for DrvTickDelayMs
+    appupgrade.o(i.AppUpgradeHandle) refers to appupgrade.o(.data) for gUpgradeStatus
+    appupgrade.o(i.AppUpgradeHandle) refers to appupgrade.o(.bss) for gFixCfg
+    startup_mke16z4.o(RESET) refers to startup_mke16z4.o(.text) for Reset_Handler
+    startup_mke16z4.o(RESET) refers to drvuart.o(i.LPUART1_IRQHandler) for LPUART1_IRQHandler
+    startup_mke16z4.o(RESET) refers to drvtimer.o(i.PWT_LPTMR0_IRQHandler) for PWT_LPTMR0_IRQHandler
+    startup_mke16z4.o(.text) refers to startup_mke16z4.o(FlashConfig) for FlashConfig
+    startup_mke16z4.o(.text) refers to startup_mke16z4.o(RESET) for __Vectors
+    startup_mke16z4.o(.text) refers to system.o(i.SystemSetup) for SystemSetup
+    startup_mke16z4.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system.o(i.JumpToApplication) refers to drvtimer.o(i.DrvTimerDeinit) for DrvTimerDeinit
+    system.o(i.JumpToApplication) refers to drvuart.o(i.DrvUartDeinit) for DrvUartDeinit
+    system.o(i.SystemSetup) refers to system.o(i.SysSircClkInit) for SysSircClkInit
+    system.o(i.SystemSetup) refers to system.o(i.SysFircClkInit) for SysFircClkInit
+    drvtimer.o(i.DrvGetTimerMsTick) refers to drvtimer.o(.data) for gSystemTick
+    drvtimer.o(i.DrvTickDelayMs) refers to drvtimer.o(.data) for gSystemTick
+    drvtimer.o(i.DrvTimerInit) refers to system.o(i.PeripheralClockEnable) for PeripheralClockEnable
+    drvtimer.o(i.DrvTimerInit) refers to drvtimer.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    drvtimer.o(i.DrvTimerInit) refers to drvtimer.o(.data) for gSystemTick
+    drvtimer.o(i.PWT_LPTMR0_IRQHandler) refers to drvtimer.o(.data) for gSystemTick
+    drvuart.o(i.DrvUartInit) refers to system.o(i.PeripheralClockEnable) for PeripheralClockEnable
+    drvuart.o(i.DrvUartInit) refers to drvgpio.o(i.DrvGpioSetPinMux) for DrvGpioSetPinMux
+    drvuart.o(i.DrvUartInit) refers to system.o(i.PeripheralClockSrcSelect) for PeripheralClockSrcSelect
+    drvuart.o(i.DrvUartInit) refers to drvuart.o(i.setModuloBaudRate) for setModuloBaudRate
+    drvuart.o(i.DrvUartInit) refers to drvuart.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    drvuart.o(i.LPUART1_IRQHandler) refers to zkptllowlevel.o(i.ZkPtlLowlevelRecCh) for ZkPtlLowlevelRecCh
+    drvuart.o(i.setModuloBaudRate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    drvflash.o(i.DrvFlashBlock64Write) refers to drvflash.o(i.DrvFlashWriteLongWord) for DrvFlashWriteLongWord
+    drvflash.o(i.DrvFlashEraseSector) refers to drvflash.o(i.FlashCommandSequence) for FlashCommandSequence
+    drvflash.o(i.DrvFlashWriteLongWord) refers to drvflash.o(i.FlashCommandSequence) for FlashCommandSequence
+    zkptl.o(i.ZkPtlCopyFrameData) refers to zkptl.o(i.ZkPtlGetFrameDatLen) for ZkPtlGetFrameDatLen
+    zkptl.o(i.ZkPtlCopyFrameData) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    zkptl.o(i.ZkPtlCopyFrameData) refers to zkptl.o(.data) for ptZkFrame
+    zkptl.o(i.ZkPtlGetFrameDatLen) refers to zkptl.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    zkptl.o(i.ZkPtlInit) refers to zkptllowlevel.o(i.ZkPtlLowlevelInit) for ZkPtlLowlevelInit
+    zkptl.o(i.ZkPtlInit) refers to zkptl.o(.data) for ptZkFrame
+    zkptl.o(i.ZkPtlMonitor) refers to zkptllowlevel.o(i.ZkPtlGetLowlevelFrame) for ZkPtlGetLowlevelFrame
+    zkptl.o(i.ZkPtlMonitor) refers to zkptl.o(.data) for ptZkFrame
+    zkptl.o(i.ZkPtlSetFrameData) refers to zkptl.o(i.ZkPtlGetFrameDatLen) for ZkPtlGetFrameDatLen
+    zkptl.o(i.ZkPtlSetFrameData) refers to zkptllowlevel.o(i.ZkPtlLowlevelSendData) for ZkPtlLowlevelSendData
+    zkptllowlevel.o(i.ZkPtlGetLowlevelFrame) refers to zkptllowlevel.o(i.ZkPtlRecoverFrame) for ZkPtlRecoverFrame
+    zkptllowlevel.o(i.ZkPtlGetLowlevelFrame) refers to zkptllowlevel.o(i.ZkPtltVerify) for ZkPtltVerify
+    zkptllowlevel.o(i.ZkPtlGetLowlevelFrame) refers to zkptllowlevel.o(.data) for gLowHandleBuf
+    zkptllowlevel.o(i.ZkPtlGetLowlevelFrame) refers to zkptllowlevel.o(.bss) for gLowRecvBuf
+    zkptllowlevel.o(i.ZkPtlLowlevelInit) refers to zkptllowlevel.o(.data) for gLowRecvStatus
+    zkptllowlevel.o(i.ZkPtlLowlevelRecCh) refers to zkptllowlevel.o(.data) for gLowRecvStatus
+    zkptllowlevel.o(i.ZkPtlLowlevelRecCh) refers to zkptllowlevel.o(.bss) for gLowRecvBuf
+    zkptllowlevel.o(i.ZkPtlLowlevelSendData) refers to zkptllowlevel.o(i.ZkMemCpy) for ZkMemCpy
+    zkptllowlevel.o(i.ZkPtlLowlevelSendData) refers to zkptllowlevel.o(i.ZkPtltVerify) for ZkPtltVerify
+    zkptllowlevel.o(i.ZkPtlLowlevelSendData) refers to zkptllowlevel.o(i.ZkPtlTransformFrame) for ZkPtlTransformFrame
+    zkptllowlevel.o(i.ZkPtlLowlevelSendData) refers to drvuart.o(i.ZkPtlHwSendData) for ZkPtlHwSendData
+    zkptllowlevel.o(i.ZkPtlLowlevelSendData) refers to zkptllowlevel.o(.bss) for gLowSendBuf
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry4.o(.ARM.Collect$$$$00000003) for _main_stk
+    entry4.o(.ARM.Collect$$$$00000003) refers to entry4.o(.ARM.Collect$$$$00002714) for __lit__00000000
+    entry4.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing appupgrade.o(.rev16_text), (4 bytes).
+    Removing appupgrade.o(.revsh_text), (4 bytes).
+    Removing system.o(.rev16_text), (4 bytes).
+    Removing system.o(.revsh_text), (4 bytes).
+    Removing drvtimer.o(.rev16_text), (4 bytes).
+    Removing drvtimer.o(.revsh_text), (4 bytes).
+    Removing drvuart.o(.rev16_text), (4 bytes).
+    Removing drvuart.o(.revsh_text), (4 bytes).
+    Removing drvgpio.o(.rev16_text), (4 bytes).
+    Removing drvgpio.o(.revsh_text), (4 bytes).
+    Removing drvflash.o(.rev16_text), (4 bytes).
+    Removing drvflash.o(.revsh_text), (4 bytes).
+
+12 unused section(s) (total 48 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_mke16z4.o(RESET)
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry4.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ..\..\App\AppConfig\AppConfig.c          0x00000000   Number         0  appconfig.o ABSOLUTE
+    ..\..\App\AppUpgrade\AppUpgrade.c        0x00000000   Number         0  appupgrade.o ABSOLUTE
+    ..\..\App\Boot.c                         0x00000000   Number         0  boot.o ABSOLUTE
+    ..\..\App\Configure\BootTag.c            0x00000000   Number         0  boottag.o ABSOLUTE
+    ..\..\App\SoftTagInfo\SoftTagInfo.c      0x00000000   Number         0  softtaginfo.o ABSOLUTE
+    ..\..\App\main.c                         0x00000000   Number         0  main.o ABSOLUTE
+    ..\..\Core\System.c                      0x00000000   Number         0  system.o ABSOLUTE
+    ..\..\Core\startup_MKE16Z4.s             0x00000000   Number         0  startup_mke16z4.o ABSOLUTE
+    ..\..\Driver\DrvFlash\DrvFlash.c         0x00000000   Number         0  drvflash.o ABSOLUTE
+    ..\..\Driver\DrvGpio\DrvGpio.c           0x00000000   Number         0  drvgpio.o ABSOLUTE
+    ..\..\Driver\DrvTimer\DrvTimer.c         0x00000000   Number         0  drvtimer.o ABSOLUTE
+    ..\..\Driver\DrvUart\DrvUart.c           0x00000000   Number         0  drvuart.o ABSOLUTE
+    ..\..\Protocol\ZkPtl\ZkPtl.c             0x00000000   Number         0  zkptl.o ABSOLUTE
+    ..\..\Protocol\ZkPtl\ZkPtlLowlevel.c     0x00000000   Number         0  zkptllowlevel.o ABSOLUTE
+    ..\\..\\App\\AppUpgrade\\AppUpgrade.c    0x00000000   Number         0  appupgrade.o ABSOLUTE
+    ..\\..\\Core\\System.c                   0x00000000   Number         0  system.o ABSOLUTE
+    ..\\..\\Driver\\DrvFlash\\DrvFlash.c     0x00000000   Number         0  drvflash.o ABSOLUTE
+    ..\\..\\Driver\\DrvGpio\\DrvGpio.c       0x00000000   Number         0  drvgpio.o ABSOLUTE
+    ..\\..\\Driver\\DrvTimer\\DrvTimer.c     0x00000000   Number         0  drvtimer.o ABSOLUTE
+    ..\\..\\Driver\\DrvUart\\DrvUart.c       0x00000000   Number         0  drvuart.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    FlashConfig                              0x00000400   Section       16  startup_mke16z4.o(FlashConfig)
+    .ARM.Collect$$$$00000000                 0x00000410   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000003                 0x00000410   Section        4  entry4.o(.ARM.Collect$$$$00000003)
+    .ARM.Collect$$$$00000004                 0x00000414   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000418   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000418   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000418   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000420   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000420   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002714                 0x00000420   Section        4  entry4.o(.ARM.Collect$$$$00002714)
+    __lit__00000000                          0x00000420   Data           4  entry4.o(.ARM.Collect$$$$00002714)
+    .text                                    0x00000424   Section      116  startup_mke16z4.o(.text)
+    .text                                    0x00000498   Section        0  uidiv.o(.text)
+    .text                                    0x000004c4   Section       36  init.o(.text)
+    i.AppConfigHandle                        0x000004e8   Section        0  appconfig.o(i.AppConfigHandle)
+    i.AppDataErase                           0x000005bc   Section        0  appupgrade.o(i.AppDataErase)
+    i.DrvFlashEraseSector                    0x000005d4   Section        0  drvflash.o(i.DrvFlashEraseSector)
+    .ARM.__AT_0x00000600                     0x00000600   Section       64  boottag.o(.ARM.__AT_0x00000600)
+    i.AppUpgradeHandle                       0x00000640   Section        0  appupgrade.o(i.AppUpgradeHandle)
+    i.BootHandle                             0x000008fc   Section        0  boot.o(i.BootHandle)
+    i.BootInit                               0x00000934   Section        0  boot.o(i.BootInit)
+    i.BootReportProgramError                 0x00000984   Section        0  boot.o(i.BootReportProgramError)
+    i.DrvFlashBlock64Write                   0x000009cc   Section        0  drvflash.o(i.DrvFlashBlock64Write)
+    i.DrvFlashWriteLongWord                  0x00000a10   Section        0  drvflash.o(i.DrvFlashWriteLongWord)
+    i.DrvGetTimerMsTick                      0x00000a34   Section        0  drvtimer.o(i.DrvGetTimerMsTick)
+    i.DrvGpioSetPinMux                       0x00000a40   Section        0  drvgpio.o(i.DrvGpioSetPinMux)
+    i.DrvTickDelayMs                         0x00000a60   Section        0  drvtimer.o(i.DrvTickDelayMs)
+    i.DrvTimerDeinit                         0x00000a78   Section        0  drvtimer.o(i.DrvTimerDeinit)
+    i.DrvTimerInit                           0x00000ad8   Section        0  drvtimer.o(i.DrvTimerInit)
+    i.DrvUartDeinit                          0x00000b40   Section        0  drvuart.o(i.DrvUartDeinit)
+    i.DrvUartInit                            0x00000bcc   Section        0  drvuart.o(i.DrvUartInit)
+    i.FactoryInitializationCheck             0x00000c98   Section        0  boot.o(i.FactoryInitializationCheck)
+    i.FixConfigModify                        0x00000cc8   Section        0  appconfig.o(i.FixConfigModify)
+    i.FlashCommandSequence                   0x00000d0c   Section        0  drvflash.o(i.FlashCommandSequence)
+    i.HardwareInit                           0x00000d5c   Section        0  boot.o(i.HardwareInit)
+    i.JumpToApplication                      0x00000d68   Section        0  system.o(i.JumpToApplication)
+    i.LPUART1_IRQHandler                     0x00000d9c   Section        0  drvuart.o(i.LPUART1_IRQHandler)
+    i.PWT_LPTMR0_IRQHandler                  0x00000db0   Section        0  drvtimer.o(i.PWT_LPTMR0_IRQHandler)
+    i.PeripheralClockEnable                  0x00000dd0   Section        0  system.o(i.PeripheralClockEnable)
+    i.PeripheralClockSrcSelect               0x00000dec   Section        0  system.o(i.PeripheralClockSrcSelect)
+    i.SoftTagInfoHandle                      0x00000e2c   Section        0  softtaginfo.o(i.SoftTagInfoHandle)
+    i.SoftwareInit                           0x00000e56   Section        0  boot.o(i.SoftwareInit)
+    i.SysFircClkInit                         0x00000e64   Section        0  system.o(i.SysFircClkInit)
+    i.SysSircClkInit                         0x00000ecc   Section        0  system.o(i.SysSircClkInit)
+    i.SystemSetup                            0x00000f2c   Section        0  system.o(i.SystemSetup)
+    i.ZkChkVrifi                             0x00000fe8   Section        0  boot.o(i.ZkChkVrifi)
+    i.ZkMemCpy                               0x00001028   Section        0  zkptllowlevel.o(i.ZkMemCpy)
+    i.ZkPtlCopyFrameData                     0x00001044   Section        0  zkptl.o(i.ZkPtlCopyFrameData)
+    i.ZkPtlGetFrameDatLen                    0x0000107c   Section        0  zkptl.o(i.ZkPtlGetFrameDatLen)
+    i.ZkPtlGetLowlevelFrame                  0x000010b0   Section        0  zkptllowlevel.o(i.ZkPtlGetLowlevelFrame)
+    i.ZkPtlHwSendData                        0x00001130   Section        0  drvuart.o(i.ZkPtlHwSendData)
+    i.ZkPtlInit                              0x00001160   Section        0  zkptl.o(i.ZkPtlInit)
+    i.ZkPtlLowlevelInit                      0x00001174   Section        0  zkptllowlevel.o(i.ZkPtlLowlevelInit)
+    i.ZkPtlLowlevelRecCh                     0x00001198   Section        0  zkptllowlevel.o(i.ZkPtlLowlevelRecCh)
+    i.ZkPtlLowlevelSendData                  0x00001254   Section        0  zkptllowlevel.o(i.ZkPtlLowlevelSendData)
+    i.ZkPtlMonitor                           0x000012ac   Section        0  zkptl.o(i.ZkPtlMonitor)
+    i.ZkPtlRecoverFrame                      0x000012dc   Section        0  zkptllowlevel.o(i.ZkPtlRecoverFrame)
+    i.ZkPtlSetFrameData                      0x00001340   Section        0  zkptl.o(i.ZkPtlSetFrameData)
+    i.ZkPtlTransformFrame                    0x00001364   Section        0  zkptllowlevel.o(i.ZkPtlTransformFrame)
+    i.ZkPtltVerify                           0x000013dc   Section        0  zkptllowlevel.o(i.ZkPtltVerify)
+    i.__ARM_common_switch8                   0x000013f8   Section        0  zkptl.o(i.__ARM_common_switch8)
+    i.__NVIC_SetPriority                     0x00001414   Section        0  drvtimer.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x00001415   Thumb Code   110  drvtimer.o(i.__NVIC_SetPriority)
+    i.__NVIC_SetPriority                     0x0000148c   Section        0  drvuart.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x0000148d   Thumb Code   110  drvuart.o(i.__NVIC_SetPriority)
+    i.__scatterload_copy                     0x00001504   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001512   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001514   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x00001522   Section        0  main.o(i.main)
+    i.setModuloBaudRate                      0x00001534   Section        0  drvuart.o(i.setModuloBaudRate)
+    .data                                    0x1ffffc00   Section        8  boot.o(.data)
+    gProgramError                            0x1ffffc00   Data           1  boot.o(.data)
+    gReportTimeStamp                         0x1ffffc04   Data           4  boot.o(.data)
+    .data                                    0x1ffffc08   Section        1  appconfig.o(.data)
+    gFixCfgRestore                           0x1ffffc08   Data           1  appconfig.o(.data)
+    .data                                    0x1ffffc0c   Section       17  appupgrade.o(.data)
+    gCurrentUpgradeBlock                     0x1ffffc0c   Data           4  appupgrade.o(.data)
+    gLastUpgradeBlock                        0x1ffffc10   Data           4  appupgrade.o(.data)
+    gCurrentReadBlock                        0x1ffffc14   Data           4  appupgrade.o(.data)
+    gLastReadBlock                           0x1ffffc18   Data           4  appupgrade.o(.data)
+    gUpgradeStatus                           0x1ffffc1c   Data           1  appupgrade.o(.data)
+    .data                                    0x1ffffc20   Section        4  drvtimer.o(.data)
+    gSystemTick                              0x1ffffc20   Data           4  drvtimer.o(.data)
+    .data                                    0x1ffffc24   Section        4  zkptl.o(.data)
+    ptZkFrame                                0x1ffffc24   Data           4  zkptl.o(.data)
+    .data                                    0x1ffffc28   Section       12  zkptllowlevel.o(.data)
+    gLowRecvLen                              0x1ffffc28   Data           8  zkptllowlevel.o(.data)
+    gLowUseBuf                               0x1ffffc30   Data           1  zkptllowlevel.o(.data)
+    gLowUsePos                               0x1ffffc31   Data           1  zkptllowlevel.o(.data)
+    gLowHandleBuf                            0x1ffffc32   Data           1  zkptllowlevel.o(.data)
+    gLowRecvStatus                           0x1ffffc33   Data           1  zkptllowlevel.o(.data)
+    .bss                                     0x1ffffc34   Section     1036  appconfig.o(.bss)
+    gCfgSector                               0x1ffffc34   Data        1024  appconfig.o(.bss)
+    gFixCfg                                  0x20000034   Data          12  appconfig.o(.bss)
+    .bss                                     0x20000040   Section       12  appupgrade.o(.bss)
+    gFixCfg                                  0x20000040   Data          12  appupgrade.o(.bss)
+    .bss                                     0x2000004c   Section     1440  zkptllowlevel.o(.bss)
+    gLowSendBuf                              0x2000004c   Data         288  zkptllowlevel.o(.bss)
+    gLowRecvBuf                              0x2000016c   Data        1152  zkptllowlevel.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_mke16z4.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_mke16z4.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_mke16z4.o ABSOLUTE
+    __main                                   0x00000411   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000411   Thumb Code     0  entry4.o(.ARM.Collect$$$$00000003)
+    _main_scatterload                        0x00000415   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000419   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000419   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000419   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000419   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000421   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000421   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000425   Thumb Code    24  startup_mke16z4.o(.text)
+    NMI_Handler                              0x0000043d   Thumb Code     2  startup_mke16z4.o(.text)
+    HardFault_Handler                        0x0000043f   Thumb Code     2  startup_mke16z4.o(.text)
+    SVC_Handler                              0x00000441   Thumb Code     2  startup_mke16z4.o(.text)
+    PendSV_Handler                           0x00000443   Thumb Code     2  startup_mke16z4.o(.text)
+    SysTick_Handler                          0x00000445   Thumb Code     2  startup_mke16z4.o(.text)
+    LPI2C0_IRQHandler                        0x00000447   Thumb Code     4  startup_mke16z4.o(.text)
+    LPSPI0_IRQHandler                        0x0000044b   Thumb Code     4  startup_mke16z4.o(.text)
+    LPUART0_IRQHandler                       0x0000044f   Thumb Code     4  startup_mke16z4.o(.text)
+    LPUART2_IRQHandler                       0x00000457   Thumb Code     4  startup_mke16z4.o(.text)
+    MSCAN_Rx_IRQHandler                      0x0000045b   Thumb Code     4  startup_mke16z4.o(.text)
+    MSCAN_ORed_IRQHandler                    0x0000045f   Thumb Code     4  startup_mke16z4.o(.text)
+    ADC0_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    CMP0_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    DefaultISR                               0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    FTFA_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    FTM0_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    FTM1_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPI2C0_DriverIRQHandler                  0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPIT0_IRQHandler                         0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPSPI0_DriverIRQHandler                  0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPUART0_DriverIRQHandler                 0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPUART1_DriverIRQHandler                 0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LPUART2_DriverIRQHandler                 0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    LVD_LVW_IRQHandler                       0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    MSCAN_DriverIRQHandler                   0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    PDB0_IRQHandler                          0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    PORTAE_IRQHandler                        0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    PORTBCD_IRQHandler                       0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    RTC_IRQHandler                           0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved16_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved17_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved18_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved19_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved20_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved25_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved27_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved35_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved37_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    Reserved39_IRQHandler                    0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    SCG_RCM_IRQHandler                       0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    TSI_IRQHandler                           0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    WDOG_EWM_IRQHandler                      0x00000463   Thumb Code     0  startup_mke16z4.o(.text)
+    __aeabi_uidiv                            0x00000499   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00000499   Thumb Code    44  uidiv.o(.text)
+    __scatterload                            0x000004c5   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000004c5   Thumb Code     0  init.o(.text)
+    AppConfigHandle                          0x000004e9   Thumb Code   204  appconfig.o(i.AppConfigHandle)
+    AppDataErase                             0x000005bd   Thumb Code    22  appupgrade.o(i.AppDataErase)
+    DrvFlashEraseSector                      0x000005d5   Thumb Code    38  drvflash.o(i.DrvFlashEraseSector)
+    BootSectionMsg                           0x00000600   Data          64  boottag.o(.ARM.__AT_0x00000600)
+    AppUpgradeHandle                         0x00000641   Thumb Code   666  appupgrade.o(i.AppUpgradeHandle)
+    BootHandle                               0x000008fd   Thumb Code    52  boot.o(i.BootHandle)
+    BootInit                                 0x00000935   Thumb Code    70  boot.o(i.BootInit)
+    BootReportProgramError                   0x00000985   Thumb Code    60  boot.o(i.BootReportProgramError)
+    DrvFlashBlock64Write                     0x000009cd   Thumb Code    66  drvflash.o(i.DrvFlashBlock64Write)
+    DrvFlashWriteLongWord                    0x00000a11   Thumb Code    32  drvflash.o(i.DrvFlashWriteLongWord)
+    DrvGetTimerMsTick                        0x00000a35   Thumb Code     6  drvtimer.o(i.DrvGetTimerMsTick)
+    DrvGpioSetPinMux                         0x00000a41   Thumb Code    30  drvgpio.o(i.DrvGpioSetPinMux)
+    DrvTickDelayMs                           0x00000a61   Thumb Code    20  drvtimer.o(i.DrvTickDelayMs)
+    DrvTimerDeinit                           0x00000a79   Thumb Code    84  drvtimer.o(i.DrvTimerDeinit)
+    DrvTimerInit                             0x00000ad9   Thumb Code    90  drvtimer.o(i.DrvTimerInit)
+    DrvUartDeinit                            0x00000b41   Thumb Code   124  drvuart.o(i.DrvUartDeinit)
+    DrvUartInit                              0x00000bcd   Thumb Code   182  drvuart.o(i.DrvUartInit)
+    FactoryInitializationCheck               0x00000c99   Thumb Code    48  boot.o(i.FactoryInitializationCheck)
+    FixConfigModify                          0x00000cc9   Thumb Code    64  appconfig.o(i.FixConfigModify)
+    FlashCommandSequence                     0x00000d0d   Thumb Code    74  drvflash.o(i.FlashCommandSequence)
+    HardwareInit                             0x00000d5d   Thumb Code    12  boot.o(i.HardwareInit)
+    JumpToApplication                        0x00000d69   Thumb Code    48  system.o(i.JumpToApplication)
+    LPUART1_IRQHandler                       0x00000d9d   Thumb Code    14  drvuart.o(i.LPUART1_IRQHandler)
+    PWT_LPTMR0_IRQHandler                    0x00000db1   Thumb Code    24  drvtimer.o(i.PWT_LPTMR0_IRQHandler)
+    PeripheralClockEnable                    0x00000dd1   Thumb Code    22  system.o(i.PeripheralClockEnable)
+    PeripheralClockSrcSelect                 0x00000ded   Thumb Code    60  system.o(i.PeripheralClockSrcSelect)
+    SoftTagInfoHandle                        0x00000e2d   Thumb Code    42  softtaginfo.o(i.SoftTagInfoHandle)
+    SoftwareInit                             0x00000e57   Thumb Code    14  boot.o(i.SoftwareInit)
+    SysFircClkInit                           0x00000e65   Thumb Code   100  system.o(i.SysFircClkInit)
+    SysSircClkInit                           0x00000ecd   Thumb Code    92  system.o(i.SysSircClkInit)
+    SystemSetup                              0x00000f2d   Thumb Code   158  system.o(i.SystemSetup)
+    ZkChkVrifi                               0x00000fe9   Thumb Code    54  boot.o(i.ZkChkVrifi)
+    ZkMemCpy                                 0x00001029   Thumb Code    28  zkptllowlevel.o(i.ZkMemCpy)
+    ZkPtlCopyFrameData                       0x00001045   Thumb Code    50  zkptl.o(i.ZkPtlCopyFrameData)
+    ZkPtlGetFrameDatLen                      0x0000107d   Thumb Code    50  zkptl.o(i.ZkPtlGetFrameDatLen)
+    ZkPtlGetLowlevelFrame                    0x000010b1   Thumb Code   112  zkptllowlevel.o(i.ZkPtlGetLowlevelFrame)
+    ZkPtlHwSendData                          0x00001131   Thumb Code    42  drvuart.o(i.ZkPtlHwSendData)
+    ZkPtlInit                                0x00001161   Thumb Code    14  zkptl.o(i.ZkPtlInit)
+    ZkPtlLowlevelInit                        0x00001175   Thumb Code    20  zkptllowlevel.o(i.ZkPtlLowlevelInit)
+    ZkPtlLowlevelRecCh                       0x00001199   Thumb Code   166  zkptllowlevel.o(i.ZkPtlLowlevelRecCh)
+    ZkPtlLowlevelSendData                    0x00001255   Thumb Code    82  zkptllowlevel.o(i.ZkPtlLowlevelSendData)
+    ZkPtlMonitor                             0x000012ad   Thumb Code    44  zkptl.o(i.ZkPtlMonitor)
+    ZkPtlRecoverFrame                        0x000012dd   Thumb Code   100  zkptllowlevel.o(i.ZkPtlRecoverFrame)
+    ZkPtlSetFrameData                        0x00001341   Thumb Code    36  zkptl.o(i.ZkPtlSetFrameData)
+    ZkPtlTransformFrame                      0x00001365   Thumb Code   120  zkptllowlevel.o(i.ZkPtlTransformFrame)
+    ZkPtltVerify                             0x000013dd   Thumb Code    28  zkptllowlevel.o(i.ZkPtltVerify)
+    __ARM_common_switch8                     0x000013f9   Thumb Code    28  zkptl.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x00001505   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001513   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001515   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x00001523   Thumb Code    16  main.o(i.main)
+    setModuloBaudRate                        0x00001535   Thumb Code   240  drvuart.o(i.setModuloBaudRate)
+    Region$$Table$$Base                      0x00001628   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001648   Number         0  anon$$obj.o(Region$$Table)
+    Image$$ARM_LIB_STACK$$ZI$$Limit          0x20000c00   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region USER_MAP (Base: 0x00000000, Size: 0x0000167c, Max: 0x00002000, ABSOLUTE)
+
+    Execution Region VECTOR_ROM_MAP (Base: 0x00000000, Size: 0x000000c0, Max: 0x00000200, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          196    RESET               startup_mke16z4.o
+
+
+    Execution Region FLASH_CFG_MAP (Base: 0x00000400, Size: 0x00000010, Max: 0x00000010, ABSOLUTE, FIXED)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000400   0x00000010   Data   RO          197    FlashConfig         startup_mke16z4.o
+
+
+    Execution Region CODE_MAP (Base: 0x00000410, Size: 0x00001238, Max: 0x00001bf0, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000410   0x00000000   Code   RO          522  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x00000410   0x00000004   Code   RO          527    .ARM.Collect$$$$00000003  mc_p.l(entry4.o)
+    0x00000414   0x00000004   Code   RO          530    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x00000418   0x00000000   Code   RO          532    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x00000418   0x00000000   Code   RO          534    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x00000418   0x00000008   Code   RO          535    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x00000420   0x00000000   Code   RO          537    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x00000420   0x00000000   Code   RO          539    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x00000420   0x00000004   Code   RO          528    .ARM.Collect$$$$00002714  mc_p.l(entry4.o)
+    0x00000424   0x00000074   Code   RO          198    .text               startup_mke16z4.o
+    0x00000498   0x0000002c   Code   RO          525    .text               mc_p.l(uidiv.o)
+    0x000004c4   0x00000024   Code   RO          541    .text               mc_p.l(init.o)
+    0x000004e8   0x000000d4   Code   RO          127    i.AppConfigHandle   appconfig.o
+    0x000005bc   0x00000016   Code   RO          150    i.AppDataErase      appupgrade.o
+    0x000005d2   0x00000002   PAD
+    0x000005d4   0x0000002c   Code   RO          390    i.DrvFlashEraseSector  drvflash.o
+    0x00000600   0x00000040   Data   RO          103    .ARM.__AT_0x00000600  boottag.o
+    0x00000640   0x000002bc   Code   RO          151    i.AppUpgradeHandle  appupgrade.o
+    0x000008fc   0x00000038   Code   RO            3    i.BootHandle        boot.o
+    0x00000934   0x00000050   Code   RO            4    i.BootInit          boot.o
+    0x00000984   0x00000048   Code   RO            5    i.BootReportProgramError  boot.o
+    0x000009cc   0x00000042   Code   RO          389    i.DrvFlashBlock64Write  drvflash.o
+    0x00000a0e   0x00000002   PAD
+    0x00000a10   0x00000024   Code   RO          391    i.DrvFlashWriteLongWord  drvflash.o
+    0x00000a34   0x0000000c   Code   RO          260    i.DrvGetTimerMsTick  drvtimer.o
+    0x00000a40   0x0000001e   Code   RO          369    i.DrvGpioSetPinMux  drvgpio.o
+    0x00000a5e   0x00000002   PAD
+    0x00000a60   0x00000018   Code   RO          261    i.DrvTickDelayMs    drvtimer.o
+    0x00000a78   0x00000060   Code   RO          262    i.DrvTimerDeinit    drvtimer.o
+    0x00000ad8   0x00000068   Code   RO          263    i.DrvTimerInit      drvtimer.o
+    0x00000b40   0x0000008c   Code   RO          314    i.DrvUartDeinit     drvuart.o
+    0x00000bcc   0x000000cc   Code   RO          315    i.DrvUartInit       drvuart.o
+    0x00000c98   0x00000030   Code   RO            6    i.FactoryInitializationCheck  boot.o
+    0x00000cc8   0x00000044   Code   RO          128    i.FixConfigModify   appconfig.o
+    0x00000d0c   0x00000050   Code   RO          392    i.FlashCommandSequence  drvflash.o
+    0x00000d5c   0x0000000c   Code   RO            7    i.HardwareInit      boot.o
+    0x00000d68   0x00000034   Code   RO          204    i.JumpToApplication  system.o
+    0x00000d9c   0x00000014   Code   RO          316    i.LPUART1_IRQHandler  drvuart.o
+    0x00000db0   0x00000020   Code   RO          264    i.PWT_LPTMR0_IRQHandler  drvtimer.o
+    0x00000dd0   0x0000001c   Code   RO          205    i.PeripheralClockEnable  system.o
+    0x00000dec   0x00000040   Code   RO          206    i.PeripheralClockSrcSelect  system.o
+    0x00000e2c   0x0000002a   Code   RO          115    i.SoftTagInfoHandle  softtaginfo.o
+    0x00000e56   0x0000000e   Code   RO            8    i.SoftwareInit      boot.o
+    0x00000e64   0x00000068   Code   RO          207    i.SysFircClkInit    system.o
+    0x00000ecc   0x00000060   Code   RO          208    i.SysSircClkInit    system.o
+    0x00000f2c   0x000000bc   Code   RO          209    i.SystemSetup       system.o
+    0x00000fe8   0x00000040   Code   RO            9    i.ZkChkVrifi        boot.o
+    0x00001028   0x0000001c   Code   RO          465    i.ZkMemCpy          zkptllowlevel.o
+    0x00001044   0x00000038   Code   RO          425    i.ZkPtlCopyFrameData  zkptl.o
+    0x0000107c   0x00000032   Code   RO          426    i.ZkPtlGetFrameDatLen  zkptl.o
+    0x000010ae   0x00000002   PAD
+    0x000010b0   0x00000080   Code   RO          466    i.ZkPtlGetLowlevelFrame  zkptllowlevel.o
+    0x00001130   0x00000030   Code   RO          317    i.ZkPtlHwSendData   drvuart.o
+    0x00001160   0x00000014   Code   RO          427    i.ZkPtlInit         zkptl.o
+    0x00001174   0x00000024   Code   RO          467    i.ZkPtlLowlevelInit  zkptllowlevel.o
+    0x00001198   0x000000bc   Code   RO          468    i.ZkPtlLowlevelRecCh  zkptllowlevel.o
+    0x00001254   0x00000058   Code   RO          469    i.ZkPtlLowlevelSendData  zkptllowlevel.o
+    0x000012ac   0x00000030   Code   RO          428    i.ZkPtlMonitor      zkptl.o
+    0x000012dc   0x00000064   Code   RO          470    i.ZkPtlRecoverFrame  zkptllowlevel.o
+    0x00001340   0x00000024   Code   RO          429    i.ZkPtlSetFrameData  zkptl.o
+    0x00001364   0x00000078   Code   RO          471    i.ZkPtlTransformFrame  zkptllowlevel.o
+    0x000013dc   0x0000001c   Code   RO          472    i.ZkPtltVerify      zkptllowlevel.o
+    0x000013f8   0x0000001c   Code   RO          460    i.__ARM_common_switch8  zkptl.o
+    0x00001414   0x00000078   Code   RO          265    i.__NVIC_SetPriority  drvtimer.o
+    0x0000148c   0x00000078   Code   RO          318    i.__NVIC_SetPriority  drvuart.o
+    0x00001504   0x0000000e   Code   RO          545    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00001512   0x00000002   Code   RO          546    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00001514   0x0000000e   Code   RO          547    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001522   0x00000010   Code   RO           91    i.main              main.o
+    0x00001532   0x00000002   PAD
+    0x00001534   0x000000f4   Code   RO          319    i.setModuloBaudRate  drvuart.o
+    0x00001628   0x00000020   Data   RO          543    Region$$Table       anon$$obj.o
+
+
+    Execution Region DATA_MAP (Base: 0x1ffffc00, Size: 0x000009ec, Max: 0x00000e00, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1ffffc00   0x00000008   Data   RW           10    .data               boot.o
+    0x1ffffc08   0x00000001   Data   RW          130    .data               appconfig.o
+    0x1ffffc09   0x00000003   PAD
+    0x1ffffc0c   0x00000011   Data   RW          153    .data               appupgrade.o
+    0x1ffffc1d   0x00000003   PAD
+    0x1ffffc20   0x00000004   Data   RW          266    .data               drvtimer.o
+    0x1ffffc24   0x00000004   Data   RW          430    .data               zkptl.o
+    0x1ffffc28   0x0000000c   Data   RW          474    .data               zkptllowlevel.o
+    0x1ffffc34   0x0000040c   Zero   RW          129    .bss                appconfig.o
+    0x20000040   0x0000000c   Zero   RW          152    .bss                appupgrade.o
+    0x2000004c   0x000005a0   Zero   RW          473    .bss                zkptllowlevel.o
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x200005ec, Size: 0x00000100, Max: 0x00000100, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200005ec   0x00000100   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x20000b00, Size: 0x00000100, Max: 0x00000100, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000b00   0x00000100   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       280         12          0          1       1036       2188   appconfig.o
+       722         34          0         17         12     246386   appupgrade.o
+       346         36          0          8          0       7385   boot.o
+         0          0         64          0          0        569   boottag.o
+       226         16          0          0          0       2944   drvflash.o
+        30          0          0          0          0        959   drvgpio.o
+       388         54          0          4          0      10517   drvtimer.o
+       776         64          0          0          0       4613   drvuart.o
+        16          0          0          0          0        419   main.o
+        42          0          0          0          0        492   softtaginfo.o
+       116         50        208          0          0        948   startup_mke16z4.o
+       532         52          0          0          0       6275   system.o
+       238         24          0          4          0       3078   zkptl.o
+       716         60          0         12       1440       6329   zkptllowlevel.o
+
+    ----------------------------------------------------------------------
+      4438        402        304         52       3000     293102   Object Totals
+         0          0         32          0        512          0   (incl. Generated)
+        10          0          0          6          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry4.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        44          0          0          0          0         72   uidiv.o
+
+    ----------------------------------------------------------------------
+       130         16          0          0          0        140   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       130         16          0          0          0        140   mc_p.l
+
+    ----------------------------------------------------------------------
+       130         16          0          0          0        140   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      4568        418        304         52       3000     291370   Grand Totals
+      4568        418        304         52       3000     291370   ELF Image Totals
+      4568        418        304         52          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 4872 (   4.76kB)
+    Total RW  Size (RW Data + ZI Data)              3052 (   2.98kB)
+    Total ROM Size (Code + RO Data + RW Data)       4924 (   4.81kB)
+
+==============================================================================
+

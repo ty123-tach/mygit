@@ -1,0 +1,9 @@
+.\output\drvtimer.o: ..\..\Driver\DrvTimer\DrvTimer.c
+.\output\drvtimer.o: ..\..\Driver\DrvTimer\DrvTimer.h
+.\output\drvtimer.o: ..\..\Core\System.h
+.\output\drvtimer.o: ..\..\Core\Include\MKE16Z4.h
+.\output\drvtimer.o: ..\..\Core\Include\core_cm0plus.h
+.\output\drvtimer.o: E:\WindowApp\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\drvtimer.o: ..\..\Core\Include\cmsis_version.h
+.\output\drvtimer.o: ..\..\Core\Include\cmsis_compiler.h
+.\output\drvtimer.o: ..\..\Core\Include\cmsis_armcc.h

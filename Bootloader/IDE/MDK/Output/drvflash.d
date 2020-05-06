@@ -1,0 +1,11 @@
+.\output\drvflash.o: ..\..\Driver\DrvFlash\DrvFlash.c
+.\output\drvflash.o: ..\..\Driver\DrvFlash\DrvFlash.h
+.\output\drvflash.o: ..\..\Core\Include\MKE16Z4.h
+.\output\drvflash.o: ..\..\Core\Include\core_cm0plus.h
+.\output\drvflash.o: E:\WindowApp\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\drvflash.o: ..\..\Core\Include\cmsis_version.h
+.\output\drvflash.o: ..\..\Core\Include\cmsis_compiler.h
+.\output\drvflash.o: ..\..\Core\Include\cmsis_armcc.h
+.\output\drvflash.o: ..\..\App\Configure\Configure.h
+.\output\drvflash.o: ..\..\App\Configure\CfgTagInfo.h
+.\output\drvflash.o: ..\..\App\Configure\CfgFlashPartition.h

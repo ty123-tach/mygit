@@ -1,0 +1,12 @@
+.\output\powermonitor.o: ..\..\Peripheral\PowerMonitor\PowerMonitor.c
+.\output\powermonitor.o: ..\..\Peripheral\PowerMonitor\PowerMonitor.h
+.\output\powermonitor.o: ..\..\Core\Include\MKE16Z4.h
+.\output\powermonitor.o: ..\..\Core\Include\core_cm0plus.h
+.\output\powermonitor.o: E:\WindowApp\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\powermonitor.o: ..\..\Core\Include\cmsis_version.h
+.\output\powermonitor.o: ..\..\Core\Include\cmsis_compiler.h
+.\output\powermonitor.o: ..\..\Core\Include\cmsis_armcc.h
+.\output\powermonitor.o: ..\..\Driver\DrvGpio\DrvGpio.h
+.\output\powermonitor.o: ..\..\Core\System.h
+.\output\powermonitor.o: ..\..\Driver\DrvTimer\DrvTimer.h
+.\output\powermonitor.o: ..\..\Driver\DrvADC\DrvADC.h

@@ -1,0 +1,129 @@
+Dependencies for Project 'ZkApp', Target 'ZkApp': (DO NOT MODIFY !)
+F (..\..\App\main.c)(0x5DA68BC8)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (..\..\App\App.h)(0x5DA68BD9)
+I (..\..\Driver\DrvWdt\DrvWdt.h)(0x5D53B8F8)
+F (..\..\App\Configure\AppTag.c)(0x5DEF7071)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\apptag.o --omf_browse .\output\apptag.crf --depend .\output\apptag.d)
+I (..\..\App\Configure\Configure.h)(0x5D55FFF0)
+I (..\..\App\Configure\CfgTagInfo.h)(0x5DD1F35B)
+I (..\..\App\Configure\CfgFlashPartition.h)(0x5D410370)
+I (..\..\Core\Include\absacc.h)(0x5CA324D7)
+F (..\..\App\App.c)(0x5DF1EF10)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\app.o --omf_browse .\output\app.crf --depend .\output\app.d)
+I (..\..\App\App.h)(0x5DA68BD9)
+I (..\..\Driver\DrvTimer\DrvTimer.h)(0x5D2C4681)
+I (..\..\Driver\DrvFlash\DrvFlash.h)(0x5D37AFCE)
+I (..\..\App\Configure\Configure.h)(0x5D55FFF0)
+I (..\..\App\Configure\CfgTagInfo.h)(0x5DD1F35B)
+I (..\..\App\Configure\CfgFlashPartition.h)(0x5D410370)
+I (..\..\Driver\DrvUart\DrvUart.h)(0x5D54AD96)
+I (..\..\Protocol\ZkPtl\ZkPtl.h)(0x5D64C870)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Driver\DrvADC\DrvADC.h)(0x5DA145B4)
+I (..\..\Peripheral\PowerMonitor\PowerMonitor.h)(0x5D6C8CF2)
+I (..\..\Log\DebugMsg.h)(0x5D6CA515)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\Driver\DrvCan\DrvCan.h)(0x5DF1ECE6)
+F (..\..\Core\startup_MKE16Z4.s)(0x5D43C874)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "CPU_MKE16Z32VLD4 SETA 1"--list .\listings\startup_mke16z4.lst -o .\output\startup_mke16z4.o --depend .\output\startup_mke16z4.d)
+F (..\..\Core\System.c)(0x5DF0A2E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\system.o --omf_browse .\output\system.crf --depend .\output\system.d)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Driver\DrvTimer\DrvTimer.h)(0x5D2C4681)
+I (..\..\Driver\DrvUart\DrvUart.h)(0x5D54AD96)
+F (..\..\Driver\DrvTimer\DrvTimer.c)(0x5D5DF399)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvtimer.o --omf_browse .\output\drvtimer.crf --depend .\output\drvtimer.d)
+I (..\..\Driver\DrvTimer\DrvTimer.h)(0x5D2C4681)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+F (..\..\Driver\DrvUart\DrvUart.c)(0x5D64D4AC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvuart.o --omf_browse .\output\drvuart.crf --depend .\output\drvuart.d)
+I (..\..\Driver\DrvUart\DrvUart.h)(0x5D54AD96)
+I (..\..\Driver\DrvGpio\DrvGpio.h)(0x5D5C99BB)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Protocol\ZkPtl\ZkPtlLowlevel.h)(0x5D64BECA)
+F (..\..\Driver\DrvGpio\DrvGpio.c)(0x5D5FC8B3)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvgpio.o --omf_browse .\output\drvgpio.crf --depend .\output\drvgpio.d)
+I (..\..\Driver\DrvGpio\DrvGpio.h)(0x5D5C99BB)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+F (..\..\Driver\DrvFlash\DrvFlash.c)(0x5D37AFBF)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvflash.o --omf_browse .\output\drvflash.crf --depend .\output\drvflash.d)
+I (..\..\Driver\DrvFlash\DrvFlash.h)(0x5D37AFCE)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\App\Configure\Configure.h)(0x5D55FFF0)
+I (..\..\App\Configure\CfgTagInfo.h)(0x5DD1F35B)
+I (..\..\App\Configure\CfgFlashPartition.h)(0x5D410370)
+F (..\..\Driver\DrvWdt\DrvWdt.c)(0x5D54D960)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvwdt.o --omf_browse .\output\drvwdt.crf --depend .\output\drvwdt.d)
+I (..\..\Driver\DrvWdt\DrvWdt.h)(0x5D53B8F8)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+F (..\..\Driver\DrvADC\DrvADC.c)(0x5DA1460E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvadc.o --omf_browse .\output\drvadc.crf --depend .\output\drvadc.d)
+I (..\..\Driver\DrvADC\DrvADC.h)(0x5DA145B4)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Driver\DrvGpio\DrvGpio.h)(0x5D5C99BB)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+I (..\..\Driver\DrvTimer\DrvTimer.h)(0x5D2C4681)
+F (..\..\Driver\DrvCan\DrvCan.c)(0x5DF1EB4C)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\drvcan.o --omf_browse .\output\drvcan.crf --depend .\output\drvcan.d)
+I (..\..\Driver\DrvCan\DrvCan.h)(0x5DF1ECE6)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Driver\DrvGpio\DrvGpio.h)(0x5D5C99BB)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+F (..\..\Protocol\ZkPtl\ZkPtl.c)(0x5D64C8CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\zkptl.o --omf_browse .\output\zkptl.crf --depend .\output\zkptl.d)
+I (..\..\Protocol\ZkPtl\ZkPtl.h)(0x5D64C870)
+I (..\..\Protocol\ZkPtl\ZkPtlLowlevel.h)(0x5D64BECA)
+F (..\..\Protocol\ZkPtl\ZkPtlLowlevel.c)(0x5D64BEC2)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\zkptllowlevel.o --omf_browse .\output\zkptllowlevel.crf --depend .\output\zkptllowlevel.d)
+I (..\..\Protocol\ZkPtl\ZkPtlLowlevel.h)(0x5D64BECA)
+F (..\..\Peripheral\PowerMonitor\PowerMonitor.c)(0x5DA14620)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\powermonitor.o --omf_browse .\output\powermonitor.crf --depend .\output\powermonitor.d)
+I (..\..\Peripheral\PowerMonitor\PowerMonitor.h)(0x5D6C8CF2)
+I (..\..\Core\Include\MKE16Z4.h)(0x5D11CBCF)
+I (..\..\Core\Include\core_cm0plus.h)(0x5D2710F0)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\Core\Include\cmsis_version.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_compiler.h)(0x5CE76810)
+I (..\..\Core\Include\cmsis_armcc.h)(0x5CE76810)
+I (..\..\Driver\DrvGpio\DrvGpio.h)(0x5D5C99BB)
+I (..\..\Core\System.h)(0x5DF0A2EA)
+I (..\..\Driver\DrvTimer\DrvTimer.h)(0x5D2C4681)
+I (..\..\Driver\DrvADC\DrvADC.h)(0x5DA145B4)
+F (..\..\Log\DebugMsg.c)(0x5D54ADEF)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Core -I ..\..\Core\Include -I ..\..\Driver\DrvTimer -I ..\..\Driver\DrvUart -I ..\..\Driver\DrvGpio -I ..\..\Driver\DrvFlash -I ..\..\Driver\DrvWdt -I ..\..\Driver\DrvADC -I ..\..\Driver\DrvCan -I ..\..\App\Configure -I ..\..\Protocol -I ..\..\Protocol\ZkPtl -I ..\..\Log -I ..\..\Peripheral\PowerMonitor-I.\RTE\_ZkApp-IE:\WindowApp\Keil_v5\ARM\PACK\NXP\MKE16Z4_DFP\11.0.0-IE:\WindowApp\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCPU_MKE16Z32VLD4-o .\output\debugmsg.o --omf_browse .\output\debugmsg.crf --depend .\output\debugmsg.d)
+I (..\..\Log\DebugMsg.h)(0x5D6CA515)
+I (E:\WindowApp\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
